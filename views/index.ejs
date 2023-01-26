@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Our Instagram-like Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="https://bitlee.info/inner/images/instagram-clone-banner.png" alt="Logo" style="width: 40px;">
+            InstaClone
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+
+                <% if(isLoggedIn){ %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/posts/form">Add Post</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                 <% } else{ %>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/register">Register</a>
+                    </li>
+                  <% } %>
+                <li class="nav-item">
+                    <a class="nav-link" href="/users">Users</a>
+                </li>
+            
+              
+            </ul>
+            <form action="/search" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="search" name="search" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Welcome to Our Instagram-like Website</h2>
+        <p>Our website is a place where you can share your photos and videos with the world. Connect with friends and discover new people and content. With our platform, you can easily share your moments, make new friends and become famous.</p>
+        <hr>
+        <h3 class="text-center mb-5">Our Core Features</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Sharing Posts</h4>
+                <p>Easily share your photos and videos with the world. You can also add captions, hashtags and location information to your posts to make them more discoverable.</p>
+            </div>
+            <div class="col-md-6">
+                <h4>Becoming Famous</h4>
+                <p>Our platform is designed to help you get discovered by more people. With features like hashtags and location tagging, it's easy to get your content in front of the right audience.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <span class="text-muted">Copyright &copy; Our Instagram-like Website</span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0
